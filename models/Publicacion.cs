@@ -8,7 +8,9 @@ namespace Biblioteca.models
     public class Publicacion
     {
         public string? Titulo {get; set;}
-        public int AñoDePublicacion {get; set;}    
-        
+        public int AñoDePublicacion {get; set;}
+
+
+
     }
 }

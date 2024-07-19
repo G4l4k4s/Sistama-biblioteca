@@ -19,4 +19,24 @@ public class Libro : Publicacion
         Genero = genero;
         Precio = precio;
     }
+
+    // Método para descripción detallada del libro
+    public string DescripcionDetallada()
+    {
+        return $"Título: {Titulo}\n" +
+               $"Autor: {Autor}\n" +
+               $"ISBN: {ISBN}\n" +
+               $"Año de Publicación: {AñoDePublicacion}\n" +
+               $"Género: {Genero}\n" +
+               $"Precio: {Precio:C}";
+    }
+
+    // Método para aplicar descuento al precio del libro
+
+
+    // Método para determinar si el libro es reciente (publicado en los últimos 5 años)
+    public bool EsReciente()
+    {
+        return (DateTime.Now.Year - AñoDePublicacion) <= 5;
+    }
 }
